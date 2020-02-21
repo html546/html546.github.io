@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>只有我不在的街道</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="无法回头的旅途，无法再次获得的宝物，无法死而复生的生命，这个世界上大部分的事物都是无法恢复原状的，人们熟知这一点，至今也在一步步地前行，为了看到未曾见过的风景，从未停下脚步。————《来自深渊》">
+<meta property="og:type" content="website">
+<meta property="og:title" content="只有我不在的街道">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="只有我不在的街道">
+<meta property="og:description" content="无法回头的旅途，无法再次获得的宝物，无法死而复生的生命，这个世界上大部分的事物都是无法恢复原状的，人们熟知这一点，至今也在一步步地前行，为了看到未曾见过的风景，从未停下脚步。————《来自深渊》">
+<meta property="article:author" content="只有我不在的街道">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="只有我不在的街道" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">只有我不在的街道</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我的前端博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="w-Vue笔记3" class="article article-type-w" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/02/Vue%E7%AC%94%E8%AE%B03/" class="article-date">
+  <time datetime="2018-05-02T08:26:03.000Z" itemprop="datePublished">2018-05-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/vue/">vue</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/02/Vue%E7%AC%94%E8%AE%B03/">Vue笔记3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="框架和库"><a href="#框架和库" class="headerlink" title="框架和库"></a>框架和库</h2><ul>
+<li>框架 vue 拥有完整的解决方案 我们写好人家调用我</li>
+<li>库 jquery underscore zpeto animate.css 我们调用他<h2 id="渐进式-（渐进增强）"><a href="#渐进式-（渐进增强）" class="headerlink" title="渐进式 （渐进增强）"></a>渐进式 （渐进增强）</h2></li>
+<li>vue全家桶 vuejs + vue-router + vuex + axios</li>
+<li>通过组合 完成一个完整的框架<h2 id="MVC-backbone-单向的"><a href="#MVC-backbone-单向的" class="headerlink" title="MVC(backbone) 单向的"></a>MVC(backbone) 单向的</h2></li>
+<li>model 数据</li>
+<li>view 视图</li>
+<li>controller 控制器</li>
+</ul>
+<p>##MVVM(angular,vue) 双向的</p>
+<ul>
+<li>model 数据</li>
+<li>view 视图</li>
+<li>viewModel 视图模型</li>
+</ul>
+<h2 id="Object-defineProperty-es5-的没有替代方案"><a href="#Object-defineProperty-es5-的没有替代方案" class="headerlink" title="Object.defineProperty(es5)的没有替代方案"></a>Object.defineProperty(es5)的没有替代方案</h2><ul>
+<li>不支持ie8以下(&lt;=)<h2 id="安装vue"><a href="#安装vue" class="headerlink" title="安装vue"></a>安装vue</h2></li>
+<li>cdn的方式</li>
+<li>npm 安装 node package manager <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br><span class="line">npm install vue</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>初始化会产生一个package.json的文件这个文件用来描述项目的依赖，不能有大写 特殊字符 中文，而且不要和安装的包的名字相同</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/02/Vue%E7%AC%94%E8%AE%B03/" data-id="ck6vqlmsg000mucrl8hf79myz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="w-Vue笔记2" class="article article-type-w" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/02/Vue%E7%AC%94%E8%AE%B02/" class="article-date">
+  <time datetime="2018-05-02T08:25:21.000Z" itemprop="datePublished">2018-05-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/vue/">vue</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/02/Vue%E7%AC%94%E8%AE%B02/">Vue笔记2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="箭头函数、闭包和foreach"><a href="#箭头函数、闭包和foreach" class="headerlink" title="箭头函数、闭包和foreach"></a>箭头函数、闭包和foreach</h2><ol>
+<li>arrow fn 不具备this,arguments   </li>
+<li>自己家没有this就找上一级的this</li>
+<li>如何更改this指向</li>
+</ol>
+<ul>
+<li>call apply bind </li>
+<li>var that = this;</li>
+<li>=&gt;</li>
+</ul>
+<ol start="4">
+<li>如何确定this是谁 看谁调用的 .前面是谁this就是谁</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function a(b)&#123;</span><br><span class="line">    return b+1;</span><br><span class="line">&#125;</span><br><span class="line">let a &#x3D; b&#x3D;&gt; b+1;&#x2F;&#x2F;去掉function关键字 参数有一个可以省略小括号 小括号和大括号之间有一个箭头</span><br><span class="line">&#x2F;&#x2F;如果没有大括号则直接是返回值 有大括号必须写return</span><br><span class="line">&#x2F;* function a(b)&#123;</span><br><span class="line">    return function (c)&#123;</span><br><span class="line">        return b+c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">a(1)(2); *&#x2F;</span><br><span class="line"></span><br><span class="line">let a &#x3D; b &#x3D;&gt; c &#x3D;&gt;b + c; &#x2F;&#x2F; 高阶函数 (&gt;&#x3D;两箭头的)</span><br><span class="line">console.log(a(1)(2)); &#x2F;&#x2F;3</span><br><span class="line">let a &#x3D; function (b)&#123;</span><br><span class="line">    return function (c)&#123;</span><br><span class="line">        return b+c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;();</span><br><span class="line">&#x2F;&#x2F;闭包:函数执行的一瞬间叫闭包，（不销毁的作用域）,当执行后返回的结果必须是引用数据类型，被外界变量接收 此时这个函数不会销毁(模块化)</span><br><span class="line">&#x2F;&#x2F;在vue中，很多时候不能用箭头函数</span><br><span class="line">[1,2,3].forEach(item&#x3D;&gt;console.log(item)); &#x2F;&#x2F;1,2,3</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/02/Vue%E7%AC%94%E8%AE%B02/" data-id="ck6vqlms9000hucrl5ucfe7lx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Python2笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/02/Python2%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2018-05-02T08:21:28.000Z" itemprop="datePublished">2018-05-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%87%AA%E5%B7%B1%E5%AD%A6%E4%B9%A0%E6%97%B6%E5%81%9A%E7%9A%84%E7%AC%94%E8%AE%B0/">自己学习时做的笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/02/Python2%E7%AC%94%E8%AE%B0/">Python2笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="0-什么是BIF？"><a href="#0-什么是BIF？" class="headerlink" title="0. 什么是BIF？"></a>0. 什么是BIF？</h6><blockquote>
+<p>BIF 就是 Built-in Functions，内置函数。为了方便程序员快速编写脚本程序（脚本就是要编程速度快快快！！！），Python 提供了非常丰富的内置函数，我们只需要直接调用即可，例如 print() 的功能是“打印到屏幕”，input() 的作用是接收用户输入（注：Python3 用 input() 取代了 Python2 的 raw_input()，用法如有不懂请看视频讲解）。</p>
+</blockquote>
+<h6 id="1-用课堂上小甲鱼教的方法数一数-Python3-提供了多少个-BIF？"><a href="#1-用课堂上小甲鱼教的方法数一数-Python3-提供了多少个-BIF？" class="headerlink" title="1.用课堂上小甲鱼教的方法数一数 Python3 提供了多少个 BIF？"></a>1.用课堂上小甲鱼教的方法数一数 Python3 提供了多少个 BIF？</h6><blockquote>
+<p>在 Python 或 IDLE 中，输入 dir(<strong>builtins</strong>) 可以看到 Python 提供的内置方法列表（注意，builtins 前后是两个下划线哦）其中小写的就是 BIF。如果想具体查看某个 BIF 的功能，比如 input()，可以在 shell 中输入 help(input)，就会得到这个 BIF 的功能描述。</p>
+</blockquote>
+<h6 id="2-在-Python-看来：’FishC’-和-‘fishc’-一样吗？"><a href="#2-在-Python-看来：’FishC’-和-‘fishc’-一样吗？" class="headerlink" title="2. 在 Python 看来：’FishC’ 和 ‘fishc’ 一样吗？"></a>2. 在 Python 看来：’FishC’ 和 ‘fishc’ 一样吗？</h6><blockquote>
+<p>不一样，因为 Python 是一个“敏感的小女孩”，所以不要试图欺骗她，对 Python 来说，fishc 和 FishC 是完全不同的两个名字，所以编程的时候一定要当心。不过 Python 会帮助解决可能因此出现的问题，例如只有当标识符已经赋值后（还记得吗，小甲鱼在课堂中说过 Python 的变量是不用先声明的）才能在代码中使用，未赋值的标识符直接使用会导致运行时错误，所以你很快就可以根据经验发现此问题。</p>
+</blockquote>
+<h6 id="3-在小甲鱼看来，Python-中什么是最重要的？你赞同吗？"><a href="#3-在小甲鱼看来，Python-中什么是最重要的？你赞同吗？" class="headerlink" title="3. 在小甲鱼看来，Python 中什么是最重要的？你赞同吗？"></a>3. 在小甲鱼看来，Python 中什么是最重要的？你赞同吗？</h6><blockquote>
+<p>缩进！在小甲鱼看来，缩进是 Python 的灵魂，缩进的严格要求使得 Python 的代码显得非常精简并且有层次（小甲鱼阅读过很多大牛的代码，那个乱……C语言不是有国际乱码大赛嘛……）。所以在 Python里对待缩进代码要十分小心，如果没有正确地缩进，代码所做的事情可能和你的期望相去甚远（就像C语言里边括号打错了位置）。如果在正确的位置输入冒号“:”，IDLE 会自动将下一行缩进！</p>
+</blockquote>
+<h6 id="4-这节课的例子中出现了-和-，他们表示不同的含义，你在编程的过程中会不小心把“-”误写成“-”吗？有没有好的办法可以解决这个问题呢？"><a href="#4-这节课的例子中出现了-和-，他们表示不同的含义，你在编程的过程中会不小心把“-”误写成“-”吗？有没有好的办法可以解决这个问题呢？" class="headerlink" title="4. 这节课的例子中出现了=和==，他们表示不同的含义，你在编程的过程中会不小心把“==”误写成“=”吗？有没有好的办法可以解决这个问题呢？"></a>4. 这节课的例子中出现了=和==，他们表示不同的含义，你在编程的过程中会不小心把“==”误写成“=”吗？有没有好的办法可以解决这个问题呢？</h6><blockquote>
+<p>C语言的话，如果 if( c == 1 ) 写成 if( c = 1 )，程序就完全不按程序员原本的目的去执行，但在 Python 这里，不好意思，行不通，语法错误！Python 不允许 if 条件中赋值，所以 if c = 1: 会报错！<br>小甲鱼觉得这种做法可以非常有效的防止程序员因为打炮、熬夜等问题导致粗心的 BUG ，并且这类 BUG 杀伤力都巨大！</p>
+</blockquote>
+<h6 id="5-你听说过“拼接”这个词吗？"><a href="#5-你听说过“拼接”这个词吗？" class="headerlink" title="5. 你听说过“拼接”这个词吗？"></a>5. 你听说过“拼接”这个词吗？</h6><blockquote>
+<p>在一些编程语言，我们可以将两个字符串“相加”在一起，如：’I’ + ‘Love’ + ‘FishC’ 会得到 ‘ILoveFishC’，在 Python 里，这种做法叫做拼接字符串。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/02/Python2%E7%AC%94%E8%AE%B0/" data-id="ck6vqlmrn0001ucrlh3bzhrjf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-python笔记1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/28/python%E7%AC%94%E8%AE%B01/" class="article-date">
+  <time datetime="2018-04-28T00:38:34.000Z" itemprop="datePublished">2018-04-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%87%AA%E5%B7%B1%E5%AD%A6%E4%B9%A0%E6%97%B6%E5%81%9A%E7%9A%84%E7%AC%94%E8%AE%B0/">自己学习时做的笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/28/python%E7%AC%94%E8%AE%B01/">python笔记1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="0-Python-是什么类型的语言？"><a href="#0-Python-是什么类型的语言？" class="headerlink" title="0. Python 是什么类型的语言？"></a>0. Python 是什么类型的语言？</h6><ul>
+<li>Python是脚本语言<blockquote>
+<p>脚本语言(Scripting language)是电脑编程语言，因此也能让开发者藉以编写出让电脑听命行事的程序。以简单的方式快速完成某些复杂的事情通常是创造脚本语言的重要原则，基于这项原则，使得脚本语言通常比 C语言、C++语言 或 Java 之类的系统编程语言要简单容易。</p>
+</blockquote>
+</li>
+</ul>
+<h6 id="也让脚本语言另有一些属于脚本语言的特性："><a href="#也让脚本语言另有一些属于脚本语言的特性：" class="headerlink" title="也让脚本语言另有一些属于脚本语言的特性："></a>也让脚本语言另有一些属于脚本语言的特性：</h6><ul>
+<li>语法和结构通常比较简单</li>
+<li>学习和使用通常比较简单</li>
+<li>通常以容易修改程序的“解释”作为运行方式，而不需要“编译”</li>
+<li>程序的开发产能优于运行性能<blockquote>
+<p>一个脚本可以使得本来要用键盘进行的相互式操作自动化。一个Shell脚本主要由原本需要在命令行输入的命令组成，或在一个文本编辑器中，用户可以使用脚本来把一些常用的操作组合成一组串行。主要用来书写这种脚本的语言叫做脚本语言。很多脚本语言实际上已经超过简单的用户命令串行的指令，还可以编写更复杂的程序。</p>
+</blockquote>
+<h6 id="1-IDLE-是什么？"><a href="#1-IDLE-是什么？" class="headerlink" title="1. IDLE 是什么？"></a>1. IDLE 是什么？</h6><blockquote>
+<p>IDLE是一个Python Shell，shell的意思就是“外壳”，基本上来说，就是一个通过键入文本与程序交互的途径！像我们Windows那个cmd窗口，像Linux那个黑乎乎的命令窗口，他们都是shell，利用他们，我们就可以给操作系统下达命令。同样的，我们可以利用IDLE这个shell与Python进行互动。</p>
+</blockquote>
+<h6 id="2-print-的作用是什么？"><a href="#2-print-的作用是什么？" class="headerlink" title="2. print() 的作用是什么？"></a>2. print() 的作用是什么？</h6><blockquote>
+<p>print() 会在输出窗口中显示一些文本（在这一讲中，输出窗口就是IDLE shell窗口）。</p>
+</blockquote>
+<h6 id="3-Python-中表示乘法的符号是什么？"><a href="#3-Python-中表示乘法的符号是什么？" class="headerlink" title="3. Python 中表示乘法的符号是什么？"></a>3. Python 中表示乘法的符号是什么？</h6><blockquote>
+<p>Python中的乘号是*（星号）。</p>
+</blockquote>
+<h6 id="4-为什么-gt-gt-gt-print-‘I-love-fishc-com-‘-5-可以正常执行，但-gt-gt-gt-print-‘I-love-fishc-com-‘-5-却报错？"><a href="#4-为什么-gt-gt-gt-print-‘I-love-fishc-com-‘-5-可以正常执行，但-gt-gt-gt-print-‘I-love-fishc-com-‘-5-却报错？" class="headerlink" title="4. 为什么 &gt;&gt;&gt;print(‘I love fishc.com ‘ * 5) 可以正常执行，但 &gt;&gt;&gt;print(‘I love fishc.com ‘ + 5) 却报错？"></a>4. 为什么 &gt;&gt;&gt;print(‘I love fishc.com ‘ * 5) 可以正常执行，但 &gt;&gt;&gt;print(‘I love fishc.com ‘ + 5) 却报错？</h6><blockquote>
+<p>在 Python 中不能把两个完全不同的东西加在一起，比如说数字和文本，正是这个原因，&gt;&gt;&gt;print(‘I love fishc.com ‘ + 5) 才会报错。这就像是在说“五只小甲鱼加上苍井空会是多少？”一样没有多大意义，结果可能是五，可能是六，也可能是八！不过乘以一个整数来翻倍就具有一定的意义了，前边的例子就是将 “I love fishc.com” 这个字符串打印五次。</p>
+</blockquote>
+<h6 id="5-如果我需要在一个字符串中嵌入一个双引号，正确的做法是？"><a href="#5-如果我需要在一个字符串中嵌入一个双引号，正确的做法是？" class="headerlink" title="5. 如果我需要在一个字符串中嵌入一个双引号，正确的做法是？"></a>5. 如果我需要在一个字符串中嵌入一个双引号，正确的做法是？</h6><blockquote>
+<p>你有两个选择：可以利用反斜杠（\）对双引号转义：&quot;，或者用单引号引起这个字符串。例如：’ I l”o”ve fishc.com ‘。</p>
+</blockquote>
+<h6 id="6-为什么我们要使用-Python3？Python2到底有什么问题？看起来很多程序员依然都在使用Python2？"><a href="#6-为什么我们要使用-Python3？Python2到底有什么问题？看起来很多程序员依然都在使用Python2？" class="headerlink" title="6. 为什么我们要使用 Python3？Python2到底有什么问题？看起来很多程序员依然都在使用Python2？"></a>6. 为什么我们要使用 Python3？Python2到底有什么问题？看起来很多程序员依然都在使用Python2？</h6><blockquote>
+<p>确实还有相当多的程序员在使用 Python2，不过 Python3 才是 Python 发展的未来，就像 XP 和 WIN7 一样。在《零基础入门学习Python》的系列教程准备中，小甲鱼发觉 Python3 中的新特性确实很妙，很值得进行深入学习！你也不用担心，如果你了解了 Python3，Python2 的代码阅读对于你来说根本不成问题！</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/28/python%E7%AC%94%E8%AE%B01/" data-id="ck6vqlmso0016ucrl4boh89w7" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Vue笔记1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/27/Vue%E7%AC%94%E8%AE%B01/" class="article-date">
+  <time datetime="2018-04-27T00:42:38.000Z" itemprop="datePublished">2018-04-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/vue/">vue</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/27/Vue%E7%AC%94%E8%AE%B01/">Vue笔记1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="数组的方法"><a href="#数组的方法" class="headerlink" title="数组的方法:"></a>数组的方法:</h2><ul>
+<li>pop、push、unshift、shift、splice、slice、concat、indexOf、lastIndexOf、reserve、sort</li>
+<li>slice不改变原数组，其他改变原数组</li>
+</ul>
+<h2 id="foreach、filter-过滤-、map-映射-、some、every、reduce、-includes-find-es6里的"><a href="#foreach、filter-过滤-、map-映射-、some、every、reduce、-includes-find-es6里的" class="headerlink" title="foreach、filter(过滤)、map(映射)、some、every、reduce、(includes find es6里的)"></a>foreach、filter(过滤)、map(映射)、some、every、reduce、(includes find es6里的)</h2><h2 id="node-gt-8-5"><a href="#node-gt-8-5" class="headerlink" title="node&gt;8.5"></a>node&gt;8.5</h2><h2 id="关于for系列循环的区别"><a href="#关于for系列循环的区别" class="headerlink" title="关于for系列循环的区别"></a>关于for系列循环的区别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [1,2,3,4,5];</span><br><span class="line">arr.b &#x3D; &#39;100&#39;;</span><br><span class="line">for(let i &#x3D; 0;i&lt;arr.length;i++)&#123; &#x2F;&#x2F;编程式</span><br><span class="line">    console.log(arr[i]);</span><br><span class="line">&#125; </span><br><span class="line">&#x2F;&#x2F;面试: forEach for...in for for...of 的区别</span><br><span class="line">&#x2F;&#x2F;foreach不支持return </span><br><span class="line"> arr.forEach(function(item)&#123; &#x2F;&#x2F;声明式,不关心如何实现</span><br><span class="line">    console.log(item);</span><br><span class="line">&#125;) </span><br><span class="line"></span><br><span class="line">for(let key in arr)&#123; &#x2F;&#x2F;key会变成字符串类型,包括数组的私有属性也可以打印出来</span><br><span class="line">    console.log(typeof key); &#x2F;&#x2F;1、2、3、4、5、b</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for(let val of arr)&#123;&#x2F;&#x2F;支持return,只能是值of数组(不能遍历对象)</span><br><span class="line">    console.log(val);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;如果用for...of遍历对象</span><br><span class="line">let obj &#x3D; &#123;school:&#39;zfpx&#39;,age:8&#125;;</span><br><span class="line">&#x2F;&#x2F; [&#39;school&#39;,&#39;age&#39;]</span><br><span class="line">for(let val of Object.keys(obj))&#123;&#x2F;&#x2F;Object.keys 将对象的key作为新的数组</span><br><span class="line">    console.log(obj[val]); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="filter、map函数"><a href="#filter、map函数" class="headerlink" title="filter、map函数"></a>filter、map函数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;2)filter 是否操作原数组: 不  返回结果: 过滤后的新数组 回调函数的返回结果:如果返回true,表示这一项放到新数组中         (删除)</span><br><span class="line">let newArray &#x3D; [1,2,3,4,5].filter(function(item,index)&#123;</span><br><span class="line">    return item&gt;2&amp;&amp;item&lt;5;</span><br><span class="line">&#125;)</span><br><span class="line">console.log(newArray); &#x2F;&#x2F;[3,4]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;3)map 映射 将原有的数组映射成一个新数组</span><br><span class="line">&#x2F;&#x2F;不操作原数组  返回新数组  回调函数中返回什么这一项就是什么        (更新)</span><br><span class="line">&#x2F;&#x2F;[1,2,3]&#x3D;&gt;&lt;li&gt;1&lt;&#x2F;li&gt;&lt;li&gt;2&lt;&#x2F;li&gt;&lt;li&gt;3&lt;&#x2F;li&gt;</span><br><span class="line">let arr1 &#x3D; [1,2,3].map(function(item)&#123;</span><br><span class="line">    return &#96;&lt;li&gt;$&#123;item&#125;&lt;&#x2F;li&gt;&#96;; &#x2F;&#x2F;&#96;&#96;是es6中的模板字符串，遇到变量用$&#123;&#125;取值</span><br><span class="line">&#125;)</span><br><span class="line">console.log(arr1.join(&#39;,&#39;));</span><br><span class="line">&#x2F;&#x2F;4)includes 返回的是boolean</span><br><span class="line">let arr3 &#x3D; [1,2,3,4,55];</span><br><span class="line">console.log(arr3.includes(5));</span><br><span class="line">&#x2F;&#x2F;5)find 返回找到的那一项 不会改变数组 回调函数中返回true表示找到了，找到后停止循环,找不到返回的是undefined</span><br><span class="line">let result &#x3D; arr3.find(function(item,index)&#123; &#x2F;&#x2F;找到具体的某一项用find</span><br><span class="line">    return item.toString().indexOf(5)&gt;-1;</span><br><span class="line">&#125;);</span><br><span class="line">console.log(result);&#x2F;&#x2F;55</span><br><span class="line">&#x2F;&#x2F;6)some 找true 找到true后停止,返回true，找不到返回false</span><br><span class="line">let arr3 &#x3D; [1,2,3,4];</span><br><span class="line"></span><br><span class="line">let result &#x3D; arr3.some(function(item,index)&#123;</span><br><span class="line">    return item.toString().indexOf(5)&gt;-1;</span><br><span class="line">&#125;)</span><br><span class="line">console.log(result);&#x2F;&#x2F;false</span><br><span class="line">&#x2F;&#x2F;7)every找false,找到false后停止,返回false</span><br><span class="line">&#x2F;&#x2F;8)reduce 收敛 4个参数  返回的是叠加后的结果 原数组不发生变化，回调函数返回的结果:</span><br><span class="line">&#x2F;&#x2F;prev代表的是数组的第一项,next是数组的第二项</span><br><span class="line">&#x2F;&#x2F;第二次prev是undefined,next是数组的第三项</span><br><span class="line">let sum &#x3D; [1,2,3,4,5].reduce(function(prev,next,index,item)&#123;</span><br><span class="line">    &#x2F;&#x2F; console.log(arguments);</span><br><span class="line">    &#x2F;&#x2F; console.log(prev,next);</span><br><span class="line">    &#x2F;&#x2F;return 100;&#x2F;&#x2F;本次的返回值, 会作为下一次的prev</span><br><span class="line">    return prev+next;</span><br><span class="line">&#125;)</span><br><span class="line">console.log(sum);</span><br><span class="line"></span><br><span class="line">let sum2 &#x3D; [&#123;price:30,count:2&#125;,&#123;price:30,count:3&#125;,&#123;price:30,count:4&#125;].reduce(function(prev,next)&#123;</span><br><span class="line">    &#x2F;&#x2F; return prev.price*prev.count+next.price*next.count;  </span><br><span class="line">    &#x2F;&#x2F; console.log(prev,next);</span><br><span class="line">    &#x2F;&#x2F;0+60</span><br><span class="line">    &#x2F;&#x2F;60+90</span><br><span class="line">    &#x2F;&#x2F;150+120</span><br><span class="line">    return prev+next.price*next.count;</span><br><span class="line">&#125;,0) &#x2F;&#x2F;默认指定第一次的prev</span><br><span class="line">console.log(sum2); &#x2F;&#x2F;270</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;数组扁平化，二维数组转一维数组</span><br><span class="line">let flat &#x3D; [[1,2,3],[4,5,6],[7,8,9]].reduce(function(prev,next)&#123;</span><br><span class="line">    return prev.concat(next);</span><br><span class="line">&#125;)</span><br><span class="line">console.log(flat);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/27/Vue%E7%AC%94%E8%AE%B01/" data-id="ck6vqlms7000gucrl33gsf9lr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-新建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/10/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2018-04-10T01:54:59.000Z" itemprop="datePublished">2018-04-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/10/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/">新建博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="今天新建了一个博客，以后会在这里面发一些自己工作中遇到的问题和感悟。"><a href="#今天新建了一个博客，以后会在这里面发一些自己工作中遇到的问题和感悟。" class="headerlink" title="今天新建了一个博客，以后会在这里面发一些自己工作中遇到的问题和感悟。"></a>今天新建了一个博客，以后会在这里面发一些自己工作中遇到的问题和感悟。</h4><h4 id="记录一下，博客修改后该怎么更新-重点-要在Blog根目录下用Bash执行"><a href="#记录一下，博客修改后该怎么更新-重点-要在Blog根目录下用Bash执行" class="headerlink" title="记录一下，博客修改后该怎么更新(重点:要在Blog根目录下用Bash执行)"></a>记录一下，博客修改后该怎么更新(重点:要在Blog根目录下用Bash执行)</h4><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></code></pre><h4 id="一些常用命令"><a href="#一些常用命令" class="headerlink" title="一些常用命令"></a>一些常用命令</h4><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;postName&quot; #新建文章</span><br><span class="line">$ hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">$ hexo generate #生成静态页面至public目录</span><br><span class="line">$ hexo server #开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）</span><br><span class="line">$ hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line">$ hexo help  #查看帮助</span><br><span class="line">$ hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure></code></pre><h3 id="建立博客期间参考的文档-https-blog-csdn-net-WhiteLamp-article-details-79717313"><a href="#建立博客期间参考的文档-https-blog-csdn-net-WhiteLamp-article-details-79717313" class="headerlink" title="建立博客期间参考的文档:https://blog.csdn.net/WhiteLamp/article/details/79717313"></a>建立博客期间参考的文档:<a href="https://blog.csdn.net/WhiteLamp/article/details/79717313" target="_blank" rel="noopener">https://blog.csdn.net/WhiteLamp/article/details/79717313</a></h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/10/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck6vqlmsp0019ucrlak947kqu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/react/">react</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%87%AA%E5%B7%B1%E5%AD%A6%E4%B9%A0%E6%97%B6%E5%81%9A%E7%9A%84%E7%AC%94%E8%AE%B0/">自己学习时做的笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" rel="tag">2020年新的开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" style="font-size: 10px;">2020年新的开始</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">学习笔记</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/">react-router-dom学习</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/">React学习(四)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%B8%89/">React学习(三)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%BA%8C/">React学习(二)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 只有我不在的街道<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>react-router-dom学习 | 只有我不在的街道</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="使用范例11234567891011121314151617import React, &amp;#123; Component &amp;#125; from &quot;react&quot;;import &amp;#123; BrowserRouter as Router, Route, Link &amp;#125; from &quot;react-router-dom&quot;;class Hello extends Component &amp;#123;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react-router-dom学习">
+<meta property="og:url" content="http://yoursite.com/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="只有我不在的街道">
+<meta property="og:description" content="使用范例11234567891011121314151617import React, &amp;#123; Component &amp;#125; from &quot;react&quot;;import &amp;#123; BrowserRouter as Router, Route, Link &amp;#125; from &quot;react-router-dom&quot;;class Hello extends Component &amp;#123;">
+<meta property="article:published_time" content="2020-01-10T03:03:36.000Z">
+<meta property="article:modified_time" content="2020-01-10T13:23:11.832Z">
+<meta property="article:author" content="只有我不在的街道">
+<meta property="article:tag" content="2020年新的开始">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="只有我不在的街道" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">只有我不在的街道</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我的前端博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-react-router-dom学习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time datetime="2020-01-10T03:03:36.000Z" itemprop="datePublished">2020-01-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/react/">react</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      react-router-dom学习
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="使用范例1"><a href="#使用范例1" class="headerlink" title="使用范例1"></a>使用范例1</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">"react"</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; BrowserRouter <span class="keyword">as</span> Router, Route, Link &#125; <span class="keyword">from</span> <span class="string">"react-router-dom"</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">    render() &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">        &lt;Router&gt;</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                &lt;Route exact path=<span class="string">"/"</span> component=&#123;Home&#125; /&gt;</span><br><span class="line">                &lt;Route path=<span class="string">"/about"</span> component=&#123;About&#125; /&gt;</span><br><span class="line">            &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>Router&gt;</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Hello;</span><br></pre></td></tr></table></figure>
+
+<h3 id="路由配置"><a href="#路由配置" class="headerlink" title="路由配置"></a>路由配置</h3><ol>
+<li>BrowserRouter VS HashRouter<ul>
+<li>都是路由的基本组件,需将其放在最外层,选其一使用</li>
+<li>内部只能含有一个子节点</li>
+<li>BrowserRouter的URL是指向真实URL的资源路径,页面和浏览器的history保持一致</li>
+<li>HashRouter使用URL中的hash(#)部分去创建路由</li>
+</ul>
+</li>
+</ol>
+<ol start="2">
+<li><p><code>&lt;Route/&gt;</code>讲解</p>
+<ul>
+<li>匹配路径、挂载组件</li>
+<li>exact:严格匹配</li>
+<li>path:字符串类型,用来匹配url</li>
+<li>component:值是一个组件,在path匹配成功后挂载这个组件</li>
+<li>render:一个返回组件的方法</li>
+<li>children:一个返回组件的方法</li>
+</ul>
+</li>
+<li><p><code>&lt;Switch&gt;...&lt;/Switch&gt;</code>讲解</p>
+<ul>
+<li>只会挂载与<code>&lt;Route&gt;</code>路径匹配成功的第一个 </li>
+<li>子节点只能是<code>&lt;Route&gt;</code>或<code>&lt;Redirect&gt;</code></li>
+<li>使用范例</li>
+</ul>
+</li>
+</ol>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;Switch&gt;</span><br><span class="line">    &lt;Route exact path=<span class="string">"/"</span> component=&#123;Home&#125; /&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/about"</span> component=&#123;About&#125; /&gt;</span><br><span class="line">    &lt;Route path=<span class="string">"/:user"</span> component=&#123;User&#125; /&gt;</span><br><span class="line">    &lt;Route component=&#123;NoMatch&#125; /&gt;</span><br><span class="line">&lt;Switch&gt;</span><br></pre></td></tr></table></figure></code></pre><ol start="4">
+<li><p><code>&lt;Link to= &quot;...&quot; &gt;...&lt;/Link&gt;</code></p>
+<ul>
+<li><p>to：string</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Link to=<span class="string">"/home"</span>&gt;Home&lt;<span class="regexp">/Link&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>to：object</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;Link to=&#123;&#123;</span><br><span class="line">    pathname:<span class="string">'/course'</span></span><br><span class="line">    search:<span class="string">"?sort=name"</span>,</span><br><span class="line">    hash:<span class="string">"#the-hash"</span>,</span><br><span class="line">    state:&#123;<span class="attr">id</span>:<span class="number">1</span>&#125;</span><br><span class="line">    &lt;!-- 传到组件的数据，通过<span class="keyword">this</span>.props.location.state获取 --&gt;</span><br><span class="line">&#125;&#125;&gt;Courses&lt;<span class="regexp">/Link&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p><code>&lt;NavLink to=&quot;...&quot;&gt;...&lt;/NavLink&gt;</code></p>
+<ul>
+<li>NavLink是Link的子类</li>
+<li>activeClassName:string,被选中时添加的类名</li>
+<li>activeStyle:object,被选中时添加的行内样式</li>
+<li>exact:boolean,严格匹配</li>
+</ul>
+</li>
+<li><p><code>&lt;Redirect to=&quot;...&quot; /&gt;</code></p>
+<ul>
+<li>当被挂载时，将路由重定向为to属性指定的地址</li>
+<li><code>&lt;Route path=&quot;/home&quot; render={()=&gt;&lt;Redirect to=&quot;/other&quot; /&gt;} /&gt;</code></li>
+<li>from和exact两个属性只能用在<code>&lt;Switch /&gt;</code>组件下的<code>&lt;Redirect /&gt;</code></li>
+</ul>
+</li>
+</ol>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;Switch&gt;</span><br><span class="line">    &lt;Redirect <span class="keyword">from</span>=<span class="string">"/old"</span> to=<span class="string">"/new"</span> /&gt;        </span><br><span class="line">    &lt;Route path=<span class="string">"/new"</span> component=&#123;New&#125; /&gt;</span><br><span class="line">&lt;<span class="regexp">/Switch&gt;</span></span><br></pre></td></tr></table></figure></code></pre><h3 id="动态路由"><a href="#动态路由" class="headerlink" title="动态路由"></a>动态路由</h3><ol>
+<li><p>路由配置</p>
+<ul>
+<li><code>&lt;Route path=&quot;/content/:id&quot; component={Content} /&gt;</code></li>
+<li><code>&lt;Link to={&quot;/content/1&quot;}&gt;{item.title}&lt;/Link&gt;</code></li>
+</ul>
+</li>
+<li><p>数据接收</p>
+<ul>
+<li>match对象<ul>
+<li>一个包含<code>&lt;Route path=&quot;&gt;</code>匹配路径参信息的对象</li>
+<li>params</li>
+<li>url、path、isExact</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="路由get传值"><a href="#路由get传值" class="headerlink" title="路由get传值"></a>路由get传值</h3><ol>
+<li><p>路由配置</p>
+<ul>
+<li><code>&lt;Route path=&quot;/content&quot; component={Content} /&gt;</code></li>
+<li><code>&lt;Link to={</code>/content?id=1<code>}&gt;{item.title}&lt;/Link&gt;</code></li>
+</ul>
+</li>
+<li><p>数据接收</p>
+<ul>
+<li>数据存放在this.props.location.search</li>
+<li>通过URL模块解析<ul>
+<li>npm install url -save</li>
+<li>url.parse(urlStr:string,parseQueryStr:true) </li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/" data-id="ck6vqlmsn0012ucrldl62fjqr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" rel="tag">2020年新的开始</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/01/10/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">React学习(四)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/react/">react</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%87%AA%E5%B7%B1%E5%AD%A6%E4%B9%A0%E6%97%B6%E5%81%9A%E7%9A%84%E7%AC%94%E8%AE%B0/">自己学习时做的笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" rel="tag">2020年新的开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" style="font-size: 10px;">2020年新的开始</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">学习笔记</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/">react-router-dom学习</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/">React学习(四)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%B8%89/">React学习(三)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%BA%8C/">React学习(二)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 只有我不在的街道<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

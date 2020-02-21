@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>React学习(四) | 只有我不在的街道</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Flux架构Flux流程 用户访问View View发出用户的Action Dispatcher收到Action,要求Store进行响应的更新 Store更新后,发出一个”change”事件 View收到”change”事件后,更新页面  四个组成部分 View: 视图层 Action(动作):视图层发出的消息(比如click) Dispatcher(派发器):用来接受Actions、执行回调函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React学习(四)">
+<meta property="og:url" content="http://yoursite.com/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/index.html">
+<meta property="og:site_name" content="只有我不在的街道">
+<meta property="og:description" content="Flux架构Flux流程 用户访问View View发出用户的Action Dispatcher收到Action,要求Store进行响应的更新 Store更新后,发出一个”change”事件 View收到”change”事件后,更新页面  四个组成部分 View: 视图层 Action(动作):视图层发出的消息(比如click) Dispatcher(派发器):用来接受Actions、执行回调函数">
+<meta property="article:published_time" content="2019-03-29T08:42:36.000Z">
+<meta property="article:modified_time" content="2020-01-10T13:23:11.827Z">
+<meta property="article:author" content="只有我不在的街道">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="只有我不在的街道" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">只有我不在的街道</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">我的前端博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-React学习-四" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/" class="article-date">
+  <time datetime="2019-03-29T08:42:36.000Z" itemprop="datePublished">2019-03-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/react/">react</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      React学习(四)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="Flux架构"><a href="#Flux架构" class="headerlink" title="Flux架构"></a>Flux架构</h4><h4 id="Flux流程"><a href="#Flux流程" class="headerlink" title="Flux流程"></a>Flux流程</h4><ol>
+<li>用户访问View</li>
+<li>View发出用户的Action</li>
+<li>Dispatcher收到Action,要求Store进行响应的更新</li>
+<li>Store更新后,发出一个”change”事件</li>
+<li>View收到”change”事件后,更新页面</li>
+</ol>
+<h4 id="四个组成部分"><a href="#四个组成部分" class="headerlink" title="四个组成部分"></a>四个组成部分</h4><ol>
+<li>View: 视图层</li>
+<li>Action(动作):视图层发出的消息(比如click)</li>
+<li>Dispatcher(派发器):用来接受Actions、执行回调函数</li>
+<li>Store(数据层):用来存放应用的状态,一旦发生变动,就提醒Views要更新页面</li>
+</ol>
+<h4 id="controller-view"><a href="#controller-view" class="headerlink" title="controller-view"></a>controller-view</h4><h5 id="controller-view可以理解成MVC模型中的controller"><a href="#controller-view可以理解成MVC模型中的controller" class="headerlink" title="controller-view可以理解成MVC模型中的controller."></a>controller-view可以理解成MVC模型中的controller.</h5><blockquote>
+<p>它一般由应用的顶层容器充当,负责从store中获取数据并将数据传递到子组件中。简单的应用一般只有一个controller-view,复杂应用中也可以有多个。controller-view是应用中唯一可以操作state的地方(setState())</p>
+</blockquote>
+<h5 id="dispatcher与action"><a href="#dispatcher与action" class="headerlink" title="dispatcher与action"></a>dispatcher与action</h5><blockquote>
+<p>dispatcher是事件调度中心,flux模型的中心枢纽,管理着Flux应用中的所有数据流。它本质上是Store的回调注册.每个Store注册它自己并提供一个回调函数。当Dispather响应Action时,通过已注册的回调函数,将Action提供的数据负载发送给应用中的所有Store.应用层级单例</p>
+</blockquote>
+<h5 id="Store"><a href="#Store" class="headerlink" title="Store"></a>Store</h5><blockquote>
+<p>负责封装应用的业务逻辑跟数据的交互.</p>
+</blockquote>
+<ol>
+<li>Store中包含应用所有的数据</li>
+<li>Store是应用中唯一的数据发生变更的地方</li>
+<li>Store中没有赋值接口—所有数据变更都是由dispatcher发送store,新的数据随着Store触发的change事件传回view.Store对外只暴露getter,不允许提供setter!!禁止在任何地方直接操作Store.</li>
+</ol>
+<h5 id="view"><a href="#view" class="headerlink" title="view"></a>view</h5><blockquote>
+<p>view(UI组件) ui-component职责单一只允许调用action触发事件,数据从由上层容器通过属性传递过来。</p>
+</blockquote>
+<h5 id="actionCreator"><a href="#actionCreator" class="headerlink" title="actionCreator"></a>actionCreator</h5><blockquote>
+<p>actionCreators是相对独立的,它作为语法上的辅助函数以action的形式使得dispatcher传递数据更为便利。</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/" data-id="ck6vqlmrz0009ucrl8w770sx1" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          react-router-dom学习
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%B8%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">React学习(三)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/react/">react</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%87%AA%E5%B7%B1%E5%AD%A6%E4%B9%A0%E6%97%B6%E5%81%9A%E7%9A%84%E7%AC%94%E8%AE%B0/">自己学习时做的笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" rel="tag">2020年新的开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/2020%E5%B9%B4%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/" style="font-size: 10px;">2020年新的开始</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">学习笔记</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/10/react-router-dom%E5%AD%A6%E4%B9%A0/">react-router-dom学习</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E5%9B%9B/">React学习(四)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%B8%89/">React学习(三)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/29/React%E5%AD%A6%E4%B9%A0-%E4%BA%8C/">React学习(二)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 只有我不在的街道<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
