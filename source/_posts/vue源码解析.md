@@ -218,3 +218,31 @@ __patch__  src\platforms\web\runtime\patch.js
 createPatchFunction src\core\vdom\patch.js
 
 [vue页面更新](https://segmentfault.com/a/1190000022133023)
+
+```javascript
+// patch.js
+const hooks = ["create", "activate", "update", "remove", "destroy"];
+export function createPatchFunction(backend) {
+  // 传递进来的扩展模块和节点操作对象
+  const { modules, nodeOps } = backend;
+
+  for (i = 0; i < hooks.length; ++i) {
+    // cbs['update'] = []
+    cbs[hooks[i]] = [];
+    // modules:[attrs,klass,events,domProps,style,transition]
+    for (j = 0; j < modules.length; ++j) {
+      // modules[0]['update']市创建属性执行函数,其他hook以此类推
+      if (isDef(modules[j][hooks[i]])) {
+        cbs[hooks[i]].push(modules[j][hooks[i]]);
+      }
+    }
+    // cbs['update'] :[fn,fn,fn...]
+  }
+  
+  function patchVnode(...){
+    if (isDef(data) && isPatchable(vnode)) {
+      for (i = 0; i < cbs.update.length; ++i) cbs.update[i](oldVnode, vnode);
+      if (isDef((i = data.hook)) && isDef((i = i.update))) i(oldVnode, vnode);
+    }
+  }
+```
